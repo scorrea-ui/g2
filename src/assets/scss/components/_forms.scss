@@ -1,0 +1,63 @@
+.c-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 31rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  &__inner {
+    input,
+    textarea {
+      @include type-size(bodysm);
+      border: none;
+      border-radius: 1.8rem;
+      color: color(black);
+      font-family: $open-sans;
+      margin-bottom: 2rem;
+      padding: 0.8rem 0;
+      text-align: center;
+      width: 100%;
+
+      &::placeholder {
+        color: color(black);
+      }
+    }
+  }
+
+  &__legal {
+    @include type-size(bodyxs);
+    padding: 0 3rem;
+  }
+
+  &__submit {
+    @include type-size(bodysm);
+
+    align-items: center;
+    color: color(white);
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+
+    &::before {
+      background-image: url('https://www.cloudtask.com/hubfs/g2/Icon-CTA-Send.png');
+      background-repeat: no-repeat;
+      background-size: 1.6rem;
+      content: "";
+      position: absolute;
+      height: 1.4rem;
+      right: 6.48rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.c-g2 {
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.cloudtask.com/hubfs/g2/Background-G2-Landing-Page-Body.jpg");
+  background-position: center;
+  display: flex;
+  min-height: 42.1rem;
+  padding-bottom: 3.5rem;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 40rem;
+  }
+
+  &__title {
+    @include type-size(level3);
+    color: color(blue);
+    margin-bottom: 4.58rem;
+    text-align: center;
+  }
+
+  &__img {
+    margin: 0 auto 1.35rem auto;
+  }
+
+  &__copy {
+    @include type-size(bodysm);
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    @include type-size(bodysm);
+
+    color: color(blue);
+    font-style: italic;
+    text-decoration: none;
+  }
+}

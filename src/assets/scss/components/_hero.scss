@@ -1,0 +1,44 @@
+.c-hero {
+  @extend %u-bgimg-cover-ctr;
+
+  align-items: center;
+  background-image: url("https://www.cloudtask.com/hubfs/g2/Background-G2-Landing-Page.jpg");
+  color: color(white);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 100rem;
+  width: 100%;
+
+  @include iota-breakpoint(md) {
+    min-height: 80rem;
+  }
+
+  &__title {
+    @include type-size(level8);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    padding: 0 4rem;
+    max-width: 36rem;
+  }
+
+  &__subtitle {
+    @include type-size(level2);
+    margin-bottom: 3.4rem;
+    text-align: center;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 36rem;
+  }
+
+  &__btn {
+    @include type-size(level6);
+  }
+}

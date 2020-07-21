@@ -1,0 +1,52 @@
+.c-logos {
+  padding: 0;
+  @include iota-breakpoint(md) {
+    padding: 2rem 0;
+  }
+
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include iota-breakpoint(md) {
+      flex-direction: row;
+    }
+  }
+
+  &__heading {
+    @include type-size(level3);
+    color: color(blue);
+    text-align: center;
+    margin-bottom: 4.2rem;
+  }
+
+  &__logo {
+    align-items: center;
+    display: inline-flex;
+    height: 8rem;
+    justify-content: center;
+    margin: 0 auto;
+
+    &:nth-child(n + 6) {
+      display: none;
+
+      @include iota-breakpoint(md) {
+        display: block;
+        height: auto;
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: 2rem;
+    max-width: 25.5rem;
+
+    @include iota-breakpoint(md) {
+      margin-bottom: 2rem;
+      max-width: 19.5rem;
+    }
+  }
+}
